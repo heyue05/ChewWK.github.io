@@ -1,0 +1,65 @@
+body{
+background-image: url('Inugami.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover;
+background-position: center;
+margin-left:20%;
+margin-right:20%;
+line-height: 1.5;
+letter-spacing: 2px;
+}
+
+div.s1{
+position: fixed; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+background: rgba(0, 0, 0, 0.5); 
+z-index: 0;
+}
+
+div.s2{
+position: relative; 
+z-index: 1; 
+color: white; 
+text-align: justify;}
+
+hr.l1{
+height: 3px;
+width: 60%;
+background-color: red;
+border: none;
+}
+
+hr.l2{
+height: 3px;
+background-color: blue;
+border: none;
+}
+
+h1{
+color: black; 
+text-align: center;
+font-family:'Arial';
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+span{
+background-color: 
+yellow; color: black;
+}
+
+img{
+height: 290px; 
+display: block; 
+margin: auto;
+}
+
+
+
+
+
+
+
