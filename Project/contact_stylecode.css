@@ -1,0 +1,126 @@
+.contact-page{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-title{
+    font-size: 250%;
+    color: #004080;
+}
+
+.contact-intro{
+    margin: 20px auto 40px;
+    font-size: 150%;
+    color: #333;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-info,
+.contact-form-section{
+    flex: 1 1 300px;
+    max-width: 1000px;
+}
+
+.contact-info{
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contact-info h2{
+    color: #004080;
+    margin-bottom: 10px;
+    font-size: 200%;
+}
+
+.contact-info p{
+    margin: 10px 0;
+    font-size: 150%;
+}
+
+.contact-form-section{
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contact-form-section h2{
+    color: #004080;
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+.contact-form-section form{
+    font-family: Arial;
+}
+
+.contact-form{
+    text-align: left;
+}
+
+.contact-form label{
+    display: block;
+    margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.contact-form button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background: #0073e6;
+}
+
+#formSuccess{
+    display: none;
+    margin-top: 20px;
+    color: green;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center;
+}
+
+#formSuccess.show{
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    .contact-page{
+        max-width: 1200px;
+        margin: 10px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .contact-info,
+    .contact-form-section{
+        flex: 1 1 100%;
+    }
+}

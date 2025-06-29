@@ -1,0 +1,44 @@
+.thankyou{
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+}
+
+
+.thankyou h1{
+    color: #004080;
+    font-size: 250%;
+    margin-bottom: 20px;
+}
+
+.thankyou p{
+    font-size: 200%;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.background{
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 60px auto 0;
+}
+
+a.button{
+    background-color: #fff;
+    color: #004080;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
+
+.button:hover{
+    background-color: #0073e6;
+    color: #fff;
+}

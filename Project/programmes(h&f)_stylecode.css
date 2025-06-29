@@ -1,0 +1,208 @@
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top: 140px;
+    line-height: 1.5;
+    font-size: 12;
+    overflow-x: hidden;
+    word-break: break-word;
+    white-space: normal;
+}
+
+/*Fixed top bar (Large display)*/
+.top-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;                                 /*Set the level to ensure it appears above other content*/
+    padding: 10px;                            /*top and bottom, left and right */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);      /*Add a subtle shadow to make it feel like it's floating (offset-x, offset-y, blur-radius, color)*/
+}
+
+.top-row{
+    display: flex;
+    justify-content: space-between;  /*control y, if use display: flex;*/
+    align-items: center;             /*control x, ''*/
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.logo{
+    height: 90px;
+    max-width: 160px;
+}
+
+.slogan{
+    padding-left: 10px;
+    border-left: 3px solid #004080;
+    color: #004080;
+    text-align: left;
+    font-weight: bold;
+    min-width: 200px;
+}
+
+.slogan p{
+    font-size: 22;
+    font-family: 'DengXian Light';
+    margin: 2px 0;
+}
+
+.navbar{
+    margin-top: 10px;
+    background-color:#004080;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+.navbar-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 1s, background-color 1s;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial;
+}
+
+.navbar a:hover{
+    background-color: #0073e6;
+}
+
+.navbar a.active{
+    background-color: white;
+    color:#0073e6
+}
+
+/* Btn (Small display)*/
+.hamburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #004080;
+}
+
+.mobile-nav{
+    background-color: #004080;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    border-radius: 0 0 8px 8px;
+}
+
+.mobile-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav li{
+    border-bottom: 1px solid #ccc;
+}
+
+.mobile-nav a{
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover{
+    background-color: #0073e6;
+}
+
+.mobile-nav.active {
+  max-height: 500px; 
+}
+
+/* Small screen: navbar is hidden, hamburger button appears, logo is centered */
+@media (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .logo{
+        margin: 0 auto;
+        height: 60px;
+    }
+
+    .slogan{
+        display: none; 
+    }
+
+    .footer{
+        margin-left: 220px;
+    }
+}
+
+
+/*Footer*/
+.footer{
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 90%;
+    margin-top: 40px;
+}
+
+.site-footer{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.site-footer h3{
+    margin-bottom: 15px;
+    font-size: 100%;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.social-icons a{
+    display: inline-block;
+}
+
+.social-icons img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.social-icons img:hover{
+    transform: scale(1.2); 
+}

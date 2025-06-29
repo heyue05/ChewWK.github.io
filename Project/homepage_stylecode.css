@@ -1,0 +1,265 @@
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+/*Hero Image*/
+.hero{
+    position: relative;
+    background-image: url(Hero_IMG.jpg);
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    min-height: 400px;
+}
+
+.hero-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.hero-overlay h1{
+    font-size: 450%;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p{
+    font-size: 300%;
+    margin-bottom: 10px;
+}
+
+/*Small display*/
+@media (max-width: 768px) {
+    .hero{
+        background: none; 
+        min-height: auto;
+        padding: 40px 20px; 
+    }
+
+    .hero-overlay{
+        background: none; 
+        color: #004080;  
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero-overlay p{
+        display: none; 
+    }
+
+    .hero-overlay h1{
+        font-size: 200%;
+        margin: 0;
+        line-height: 1.3;
+    }
+}
+
+/*Content*/
+a{
+    font-size: 150%;
+}
+
+.content{
+    background-color: #f9f9f9;
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.home-sections{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/*About part and Course part*/
+.home-about, .home-programmes{
+    text-align: justify;
+}
+
+.home-about h2, .home-programmes h2{
+    color: #004080;
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+.home-about p, .home-programmes p{
+    max-width: 800px;
+    margin: 0 cover;
+    font-size: 150%;
+    color: #333;
+    line-height: 1.5;
+}
+
+.home-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin:40px auto;
+    max-width:1200px;;
+    padding:0 20px;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 22%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: transform 1s ease;
+}
+
+.image-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.image-card p{
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #004080;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-card:hover{
+    transform: translateY(-10px);
+}
+
+/*Highlights*/
+.highlights {
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.highlight-title{
+    text-align: center;
+    color: #004080;
+    font-size:250%;
+}
+
+.highlight{
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 28%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 1s ease;
+}
+
+.highlight:hover{
+    transform: translateY(-10px);
+}
+
+.highlight h2{
+    color: #004080;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+
+.highlight p{
+    font-size: 150%;
+    color: #333;
+}
+
+/*Small display*/
+@media (max-width: 768px) {
+    .content{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .home-sections{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-about, .home-programmes{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .home-about p, .home-programmes p{
+        font-size: 120%;
+    }
+
+    .home-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-card{
+        width: 80%;
+    }
+
+    .image-card{
+        width: 100%;
+    }
+
+    .highlight{
+        width: 100%;
+    }
+}
+
+/*Call to Action*/
+.cta{
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 60px auto 0;
+}
+
+.cta h2{
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+.cta-btn{
+    background-color: #fff;
+    color: #004080;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
+
+.cta-btn:hover{
+    background-color: #0073e6;
+    color: #fff;
+}

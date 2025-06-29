@@ -1,0 +1,95 @@
+/*Layout Container*/
+.programmes-page{
+    display: flex;
+}
+
+/*Sidebar*/
+.sidebar{
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 250px;
+    background: #004080;
+    color: #fff;
+    padding: 20px;
+    height: calc(100% - 130px);
+    overflow-y: auto;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar h2 {
+    padding: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    background: #0073e6;
+}
+
+/*Content*/
+.programmes-content{
+    flex: 1;
+    margin-left: 250px;
+    padding: 40px;
+    text-align: justify;
+}
+
+.programmes-content h1{
+    color: #004080;
+    margin-top: 20px;
+    font-size: 250%;
+}
+
+.programmes-content h2{
+    color: #0073e6;
+    margin-top: 40px;
+    font-size: 200%;
+    scroll-margin-top: 180px;
+}
+
+.programmes-content p{
+    font-size: 150%;
+    color: #333;
+}
+
+.programmes-content ul{
+    font-size: 150%;
+    color: #333;
+}
+
+/*Small diaplay*/
+@media (max-width: 768px) {
+    .sidebar{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: auto;
+        background: #004080;
+        color: #fff;
+        padding: 20px;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+    }
+
+    .programmes-content{
+        flex: 1;
+        margin-left: 220px;
+        padding: 40px;
+        text-align: justify;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}

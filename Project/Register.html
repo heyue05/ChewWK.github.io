@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>ULU TIRAM INTERNATIONAL COLLEGE</title>
+        <link rel=icon href=UTIC_logo.png type=image/png>
+        <meta name="viewport" content=width=device-width, initial-scale=1.0>
+        <link rel=stylesheet href=header&footer_stylecode.css>
+        <link rel=stylesheet href=register_stylecode.css>
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <header class="top-header">
+            <div class="top-row">
+
+                <!-- Btn(small display) -->
+                <div class="hamburger">&#9776;</div>
+
+
+                <img class="logo" src="UTIC_logo.png" alt="UTIC Logo">
+
+                <div class="slogan">
+                    <p>A Place to Grow</p>
+                    <p>A Home to Belong</p>
+                </div>
+            </div>
+
+            <!-- Large display -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Programmes.html">Programmes</a></li>
+                    <li><a href="Register.html" class="active">Register</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Small display (btn) -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Programmes.html">Programmes</a></li>
+                    <li><a href="Register.html" class="active">Register</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="form-section">
+            <h1>Student Registration Form</h1>
+            <p>
+                Welcome to the online registration page for Ulu Tiram International College. 
+            </p>
+
+            <!-- Precautions -->
+            <h2>Precautions</h2>
+            <p>
+                Please fill out the form below to apply for the program you are interested in.<br>
+                Fields marked with <span class="required">*</span> are required.<br>
+                If you do not currently have supporting documents, you may submit them during your interview.
+            </p>
+
+            <form action="thankyou.html" method="post" id="register-form" class="register-form" enctype="multipart/form-data">
+                <label for="fullname">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">Date of Birth <span class="required">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="programmes">Intended Programme <span class="required">*</span></label>
+                <select id="programmes" name="programmes" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="business">Business Administration</option>
+                    <option value="it">Information Technology</option>
+                    <option value="education">Education</option>
+                    <option value="acc">Accounting</option>
+                </select>
+
+                <label for="qualification">Current Qualification <span class="required">*</span></label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="spm">SPM</option>
+                    <option value="stpm">STPM</option>
+                    <option value="diploma">Diploma</option>
+                </select>
+
+                <label for="certificate">Upload Supporting Certificate (PDF, optional)</label>
+                <input type="file" id="certificate" name="certificate" accept="application/pdf">
+
+                <label for="password">Create Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm">Confirm Password <span class="required">*</span></label>
+                <input type="password" id="confirm" name="confirm" required>
+                <small id="strength"></small>
+
+                <label class="terms-label">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the Terms and Conditions <span class="required">*</span>
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <script type="text/javascript" src="header&footer_JS.js"></script>
+        <script type="text/javascript" src="register_JS.js"></script>
+
+        <footer class="footer">
+            <div class="site-footer">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="fb_logo.png" alt="Facebook">
+                    </a>
+
+                    <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+                        <img src="whatsapp_logo.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="yt_logo.png" alt="YouTube">
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="ig_logo.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2025 ULU TIRAM INTERNATIONAL COLLEGE. All rights reserved</p>
+            <p>123 College Road, Ulu Tiram, Johor · Phone: +6012-3456789 · Email: info@ulutiramcollege.edu.my</p>
+            <p>Project Prototype Website Created by Chew Wen Kang (DCS2409236).</p>
+        </footer>
+    </body>
+</html>
