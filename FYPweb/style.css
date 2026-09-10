@@ -37,6 +37,9 @@ button {
   font: inherit;
 }
 
+.main-nav {
+  display: none;
+}
 
 /* ================= HEADER ================= */
 
